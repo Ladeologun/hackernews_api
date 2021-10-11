@@ -1,5 +1,4 @@
-HACKER NEWS API MODIFICATION
-
+# HACKER NEWS API MODIFICATION
 This is a Django web application that retrieves data from Hacker News API and makes it easier to navigate the news items. It provides search and filter functionality and also enables clients, through six API endpoints, to create news items, modify and delete only the items they created and provide read-only access to news items generated from Hacker News API server.
 
 TECHNOLOGIES
@@ -8,6 +7,56 @@ Python
 Django
 Django REST Framework
 SQLite 3
+
+
+# Getting Started
+To run this application locally:
+- Open up terminal (on MacOS) and switch directory to Desktop by running:
+```
+cd ~
+```
+- For Windows, open git bash and switch directory to Desktop by running:
+```
+cd Desktop
+```
+- Clone the repository by running:
+```
+git clone https://github.com/Ladeologun/HEALTHAPI.git
+```
+- Then run the following commands consecutively
+```
+cd HEALTHAPI 
+```
+```
+python3 -m venv venv
+```
+- To activate virtual environment (MacOS users): 
+```
+source venv/bin/activate
+```
+- To activate virtual environment (Windows users):
+```
+source venv/Source/activate
+```
+- Install dependencies as follows (both MacOS & Windows):
+```
+pip3 install -r requirements.txt
+```
+- To run unit tests, run the command below:
+```
+python3 manage.py test
+```
+- Make migrations by running the commands below in succession:
+```
+python3 manage.py makemigrations
+```
+```
+python3 manage.py migrate
+```
+- To start the Django server, run:
+```
+python3 manage.py runserver
+```
 
 <!-- GETTING STARTED -->
 Before starting, you need to have Python installed.
