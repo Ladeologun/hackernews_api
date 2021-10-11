@@ -21,11 +21,11 @@ cd Desktop
 ```
 - Clone the repository by running:
 ```
-git clone https://github.com/Ladeologun/HEALTHAPI.git
+git clone https://github.com/Ladeologun/hackernews_api.git
 ```
 - Then run the following commands consecutively
 ```
-cd HEALTHAPI 
+cd hackernews_api
 ```
 ```
 python3 -m venv venv
@@ -55,34 +55,8 @@ python3 manage.py migrate
 ```
 - To start the Django server, run:
 ```
-python3 manage.py runserver
+python3 manage.py runserver --noreload
 ```
-
-<!-- GETTING STARTED -->
-Before starting, you need to have Python installed.
-
-Kindly ensure that you are in the root directory(tech_news) before running the following commands.
-
-<!-- Create a virtual environment -->
-python3 -m venv venv
-
-<!-- Activate the virtual environment -->
-source venv/bin/activate
-
-<!-- Install dependencies -->
-pip install -r requirements.txt
-
-<!-- Make migrations -->
-python manage.py makemigrations
-
-<!-- Migrate apps and database -->
-python manage.py migrate
-
-<!-- Run Tests -->
-python manage.py test
-
-<!-- Start server -->
-python manage.py runserver --noreload
 
 this fetches and updates data from the hacker news api after the time specified in the scheduler
 data becomes available in the endpoints only after then.
